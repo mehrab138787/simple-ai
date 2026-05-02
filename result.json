@@ -10,4 +10,54 @@
          
 
          
-{"id":"gen-1777715811-9if1emLumoHGmCtT5VDz","object":"chat.completion","created":1777715811,"model":"baidu/qianfan-ocr-fast-20260420:free","provider":"Baidu","system_fingerprint":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"اسب معمولا ۲۷ سال عمر میکنه. عمر طولانی اسب نسبت به بقیه حیوانات است که اسبها استمرار پیش آمدن از دوران جوانی به سن میانساله از طریق دوره جوانی فشرده و تنها در این دوران شانس بیماری هایی که اسب ممکن است فاقد آنها به علت فشرده شدن این دوره تمام می شود اما اسب هرگز دارای سن قرار نمی گیرد که اوقات بسیاری از بقیه حیوانات به قرار سنتی همسران اسب برای اونکل سال دوم دوره میانساله اماده می شوند نه اسب","refusal":null,"reasoning":null}}],"usage":{"prompt_tokens":22,"completion_tokens":213,"total_tokens":235,"cost":0,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0,"cache_write_tokens":0,"audio_tokens":0,"video_tokens":0},"cost_details":{"upstream_inference_cost":0,"upstream_inference_prompt_cost":0,"upstream_inference_completions_cost":0},"completion_tokens_details":{"reasoning_tokens":0,"image_tokens":0,"audio_tokens":0}}}
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1777715872-7M5xrllldsAFrXoDCXQs","object":"chat.completion","created":1777715872,"model":"nvidia/nemotron-3-nano-30b-a3b:free","provider":"Nvidia","system_fingerprint":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"بیشتر اسب‌های بهری (حیوانات خانگی) بین **۲۵ تا ۳۰ سال** عمر می‌کنند. در شرایط عالی (غذای مناسب، مراقبت‌های വെтеринарی منظم، ورزش یا کار مناسب و محیطی без استرس) بعضی월에는 حتی می‌توانند به **۳۵ تا ۴۰ سال** برسانند. \n\n### عوامل مؤثر بر طول عمر اسب\n\n| عامل | تأثیر |\n|------|-------|\n| **گونگی تغذیه** | رژیم متعادل (کالای پروتئین، انرژی، فیبر،ビتامین‌ها و معدن‌ها) خطر بیماری‌های گدایی و juif‌گی را کاهش می‌دهد. |\n| **خدمت‌های بیطبانی** | واکسیناسیون،室腸‌تعمیر، درمان بیماری‌های عفونی و کنترل جراثیم می‌تواند سال‌های اضافه‌شده را افزاید. |\n| **ورزش و باریكاری** | بارگذاری صحیح، برنامه‌ریزی دقیق و جلوگیری از 과بارگذاری، زخم‌زدن یا آسیب‌های طولانی‌مدت را کاهش می‌دهد. |\n| **وراثت** | برخی نژادها (مثلاً اسب‌های انگلیس یا العربي) می‌توانند برای طول عمر طولانی‌تر شناخته شوند، اگرچه این件 ممکن است چندان قابل‌تفاوت باشد. |\n| **محیط زندگی** | اسب‌های که در محیطی آرام، بدون seni زیرو، و بدون آسیب‌هایی مانند سقوط یا برخورد خودروها می‌آیند، به‌طور متوسط عمر بیشتری دارند. |\n| **استفاده از اسب** | اسب‌های کارآ سرایی (مانند اسب‌های چپ‌دار یا دوشیزنی) ممکن است زودتر خسته شوند و به‌سوی زودرس شدن بیماری‌های چرخ‌دار یا قلبی می‌روند؛ اما اسب‌های که فقط برای دوستی یا شرکت استفاده می‌شوند، ممکن است بهتر نگهداری شوند. |\n\n### نکات عملی برای افزایش عمر اسب\n1. **بازدید دوره‌ای به پزشک ب veritàni**؛ حداقل یک بار در سال برای بررسی‌های عمومی.  \n2. **免疫ورژیت‌های مناسب**؛ واکسیناسیون ضدȝی گدایی، سایش خونی و بیماری‌های دیجیستویی.  \n3. **پروتئین و انرژی متعادل**؛ از خوراک‌های spéciales برای اسب‌های بزرگ و فعال استفاده کنید.  \n4. **فیکس کردن و قطعی کردن**؛ اگر قصد حفظ نسل ندارید، این روش می‌تواند خطر برخی بیماری‌های رژونی را کاهش دهد.  \n5. **کاهش استرس**؛ محیط زندگی آرام و بدون نوسان شدید، به بهبودی فیزیکی و روان کمک می‌کند.  به‌طور کلی، هر چه بیشتر مراقبت‌های پیشگیرانه و بهداشتی به اسب می‌دهید، می‌توانید به او دههٔ اضافه здійاز کنند تا به حداکثر طول عمر ممکن برسد. اگر می‌خواهید توصیه‌های خاصی برای نژاد یا سن خاص شما داشته باشید، می‌توانید جزئیات بیشتری بدهید.","refusal":null,"reasoning":"The user writes in Persian: \"اسب چندسال عمر میکنه\" which translates to \"How many years can a horse live?\" So they ask about horse lifespan. Need to answer in Persian, presumably. Provide information about average lifespan of horses, factors, differences among breeds, domestic vs wild, care, etc. Should be concise but thorough. Use Persian language. Provide maybe 25-30 years typical, some up to 40. Mention factors: genetics, nutrition, vet care, work, etc. Also mention that some horses live up to 30-35 years, some up to 40. Might also mention that mustang or wild horses have shorter lifespans due to predators, etc.\n\nWe should respond in Persian. Also ensure not to violate policies. It's straightforward.\n","reasoning_details":[{"type":"reasoning.text","text":"The user writes in Persian: \"اسب چندسال عمر میکنه\" which translates to \"How many years can a horse live?\" So they ask about horse lifespan. Need to answer in Persian, presumably. Provide information about average lifespan of horses, factors, differences among breeds, domestic vs wild, care, etc. Should be concise but thorough. Use Persian language. Provide maybe 25-30 years typical, some up to 40. Mention factors: genetics, nutrition, vet care, work, etc. Also mention that some horses live up to 30-35 years, some up to 40. Might also mention that mustang or wild horses have shorter lifespans due to predators, etc.\n\nWe should respond in Persian. Also ensure not to violate policies. It's straightforward.\n","format":"unknown","index":0}]}}],"usage":{"prompt_tokens":23,"completion_tokens":851,"total_tokens":874,"cost":0,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0,"cache_write_tokens":0,"audio_tokens":0,"video_tokens":0},"cost_details":{"upstream_inference_cost":0,"upstream_inference_prompt_cost":0,"upstream_inference_completions_cost":0},"completion_tokens_details":{"reasoning_tokens":193,"image_tokens":0,"audio_tokens":0}}}
