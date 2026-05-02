@@ -10,44 +10,4 @@
          
 
          
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-
-         
-{"id":"gen-1777715578-xMn0B2Gx4SXAIaeVSVfM","object":"chat.completion","created":1777715578,"model":"nvidia/nemotron-nano-9b-v2:free","provider":"Nvidia","system_fingerprint":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"هوش مصنوعی (Artificial Intelligence، یا AI به مختصر) یعنی dirigeant یک شاخه از علم حواسگاهی و مهندسی که در این دراز congrıl به ایجاد سیستم‌های حاسوبی فکر می‌کنند که می‌توانندfolio برای انجام وظایفitin نیاز به ذهنinin انسان انجام अमでも ایجاد کنند. این قابل توجهProto متوی ازuradoهایherent از(body به Awayه به آن Lübeck نوعهای مختلف وجود دارد:\n\n1. **آαλύτερieur** (！」「نarrow AI**)  \n   - در این نوعها، سیستمها برای انجام وظایف مخصوصی طراحی شده‌اند، مانند ANC، مثلatsch یاRecommendation systems (مانند وب‌سایت‌های تستی یا آ *„فنر“).\n\n2. **AGI** ( apparaître, یا AGI)  \n   - این نوع به Soto tono که متوجه است که آناناست/time assol یاpertoire به همان希ぴ به Coxek می‌/link کنند (مثلاًDecision-making، فهم و یادگیری،\";\n\n\nمثال‌هایی ازituresρώπا.cloudz AI می‌steinند:\n- Asutantهایورال (مانند Siri، Alexa)\n- ایکّلارهایumente barrage یاCogWhistle)\n- carregaranهاینجم وвшиве tripulación\n- پیش‌ezeیمмеры درهای outcome\n\nهوش مصنوعی باippet برای بهبود کارایی، تصمیمگیری و انجام وظایفساده'Im糟ثبaused درCommunity وGameها استفاده می‌شود.\n","refusal":null,"reasoning":"Okay, the user is asking \"هوش مصنوعی چیست\" which means \"What is artificial intelligence?\" in Persian. I need to provide a clear and concise definition. Let me start by explaining that AI is a branch of computer science focused on creating systems that can perform tasks requiring human intelligence. I should mention key areas like learning, problem-solving, and perception. Also, it's important to differentiate between narrow AI, which is designed for specific tasks, and general AI, which would have human-like versatility. Examples like virtual assistants or recommendation systems could help. Make sure the language is simple and accessible for someone who might not be familiar with technical terms. Check if there are any cultural contexts in Persian-speaking countries to consider, but since it's a general definition, keep it neutral. Avoid any markdown and keep the explanation straightforward.\n</think","reasoning_details":[{"type":"reasoning.text","text":"Okay, the user is asking \"هوش مصنوعی چیست\" which means \"What is artificial intelligence?\" in Persian. I need to provide a clear and concise definition. Let me start by explaining that AI is a branch of computer science focused on creating systems that can perform tasks requiring human intelligence. I should mention key areas like learning, problem-solving, and perception. Also, it's important to differentiate between narrow AI, which is designed for specific tasks, and general AI, which would have human-like versatility. Examples like virtual assistants or recommendation systems could help. Make sure the language is simple and accessible for someone who might not be familiar with technical terms. Check if there are any cultural contexts in Persian-speaking countries to consider, but since it's a general definition, keep it neutral. Avoid any markdown and keep the explanation straightforward.\n</think","format":"unknown","index":0}]}}],"usage":{"prompt_tokens":20,"completion_tokens":484,"total_tokens":504,"cost":0,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0,"cache_write_tokens":0,"audio_tokens":0,"video_tokens":0},"cost_details":{"upstream_inference_cost":0,"upstream_inference_prompt_cost":0,"upstream_inference_completions_cost":0},"completion_tokens_details":{"reasoning_tokens":239,"image_tokens":0,"audio_tokens":0}}}
+{"id":"gen-1777715811-9if1emLumoHGmCtT5VDz","object":"chat.completion","created":1777715811,"model":"baidu/qianfan-ocr-fast-20260420:free","provider":"Baidu","system_fingerprint":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"اسب معمولا ۲۷ سال عمر میکنه. عمر طولانی اسب نسبت به بقیه حیوانات است که اسبها استمرار پیش آمدن از دوران جوانی به سن میانساله از طریق دوره جوانی فشرده و تنها در این دوران شانس بیماری هایی که اسب ممکن است فاقد آنها به علت فشرده شدن این دوره تمام می شود اما اسب هرگز دارای سن قرار نمی گیرد که اوقات بسیاری از بقیه حیوانات به قرار سنتی همسران اسب برای اونکل سال دوم دوره میانساله اماده می شوند نه اسب","refusal":null,"reasoning":null}}],"usage":{"prompt_tokens":22,"completion_tokens":213,"total_tokens":235,"cost":0,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0,"cache_write_tokens":0,"audio_tokens":0,"video_tokens":0},"cost_details":{"upstream_inference_cost":0,"upstream_inference_prompt_cost":0,"upstream_inference_completions_cost":0},"completion_tokens_details":{"reasoning_tokens":0,"image_tokens":0,"audio_tokens":0}}}
