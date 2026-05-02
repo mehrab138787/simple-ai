@@ -13,10 +13,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
 
       - name: Send request to OpenRouter
         run: |
@@ -27,20 +27,28 @@ jobs:
               "model": "openrouter/free",
               "messages": [{"role": "user", "content": "'"${{ github.event.inputs.question }}"'"}]
             }' > result.json
-          
-          python3 -c '
+
+      - name: Extract answer with Python
+        run: |
+          python3 <<EOF
 import json
-with open("result.json") as f:
-    data = json.load(f)
+try:
+    with open("result.json") as f:
+        data = json.load(f)
     answer = data["choices"][0]["message"]["content"]
     with open("answer.txt", "w", encoding="utf-8") as out:
         out.write(answer)
-'
+    print("OK")
+except Exception as e:
+    with open("answer.txt", "w", encoding="utf-8") as out:
+        out.write(f"خطا: {e}")
+    print("ERROR")
+EOF
 
-      - name: Save answer
+      - name: Commit and push
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "bot@github.com"
           git add answer.txt result.json
-          git diff --staged --quiet || git commit -m "Update answer: $(date)"
-          git push origin main
+          git diff --staged --quiet || git commit -m "update answer"
+          git push
