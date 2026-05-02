@@ -10,13 +10,7 @@ on:
 jobs:
   ask:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Call OpenRouter API
         run: |
           curl -X POST https://openrouter.ai/api/v1/chat/completions \
@@ -28,12 +22,18 @@ jobs:
             }' > result.json
 
       - name: Extract answer
-        run: python3 extract.py
-
-      - name: Push answer
         run: |
-          git config user.name "bot"
-          git config user.email "bot@github.com"
-          git add answer.txt result.json
-          git commit -m "update answer" || echo "no changes"
-          git push
+          python3 -c "
+import json
+with open('result.json') as f:
+    data = json.load(f)
+    answer = data['choices'][0]['message']['content']
+    with open('answer.txt', 'w') as out:
+        out.write(answer)
+"
+
+      - name: Upload answer
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-answer
+          path: answer.txt
