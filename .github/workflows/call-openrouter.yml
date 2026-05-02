@@ -1,0 +1,43 @@
+name: Call OpenRouter
+
+on:
+  workflow_dispatch:
+    inputs:
+      question:
+        description: 'سوال شما'
+        required: true
+
+jobs:
+  ask:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Send request to OpenRouter
+        run: |
+          curl -X POST https://openrouter.ai/api/v1/chat/completions \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.OPENROUTER_API_KEY }}" \
+            -d '{
+              "model": "openrouter/free",
+              "messages": [{"role": "user", "content": "${{ github.event.inputs.question }}"}]
+            }' > result.json
+
+          python3 -c '
+import json
+with open("result.json") as f:
+    data = json.load(f)
+    answer = data["choices"][0]["message"]["content"]
+    with open("answer.txt", "w") as out:
+        out.write(answer)
+'
+
+      - name: Save answer
+        run: |
+          git config user.name "bot"
+          git config user.email "bot@github.com"
+          git add answer.txt
+          git commit -m "save answer" || echo "no change"
+          git push
