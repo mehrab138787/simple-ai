@@ -1,0 +1,48 @@
+name: Get AI Answer
+
+on:
+  workflow_dispatch:
+    inputs:
+      question:
+        description: 'سوال شما'
+        required: true
+        type: string
+
+jobs:
+  ask:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Call OpenRouter
+        run: |
+          curl -s -X POST https://openrouter.ai/api/v1/chat/completions \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.OPENROUTER_API_KEY }}" \
+            -d '{
+              "model": "openrouter/free",
+              "messages": [{"role": "user", "content": "'"${{ github.event.inputs.question }}"'"}]
+            }' > result.json
+
+      - name: Extract and save
+        run: |
+          python3 -c "
+import json
+with open('result.json') as f:
+    data = json.load(f)
+    answer = data['choices'][0]['message']['content']
+    with open('answer.txt', 'w', encoding='utf-8') as out:
+        out.write(answer)
+"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add answer.txt result.json
+          git commit -m "update answer" || echo "no changes"
+          git push
